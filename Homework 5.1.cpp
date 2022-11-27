@@ -10,7 +10,7 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     std::cout << "Количество сторон:\n";
-    Figure* f = new Figure; f->get_sides_count();
-    Figure* t = new Triangle; t->get_sides_count();
-    Figure* q = new Quadrangle; q->get_sides_count();
+    Figure* f = new Figure; f->get_sides_count(); delete f;
+    Figure* t = new Triangle; t->get_sides_count(); delete t;
+    Figure* q = new Quadrangle; q->get_sides_count(); delete q;
 }
